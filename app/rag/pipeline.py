@@ -1,5 +1,4 @@
-from app.rag.retriever import BaseRetriever
-from app.rag.generator import BaseGenerator
+from app.rag.base import BaseRetriever, BaseGenerator
 from app.models.schemas import ChatResponse
 
 
@@ -15,7 +14,6 @@ class RAGPipeline:
         2. Generate grounded response
         3. Extract and format citations
         """
-        # TODO: Implement orchestration logic
         chunks = await self.retriever.retrieve(query)
         answer = await self.generator.generate(query, chunks)
         

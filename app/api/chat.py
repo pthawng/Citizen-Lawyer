@@ -15,5 +15,6 @@ async def chat(
         response = await pipeline.answer(request.query)
         return response
     except Exception as e:
-        # TODO: Specific error handling (NoContextFoundError, etc.)
+        import traceback
+        traceback.print_exc()  # In chi tiết lỗi ra Terminal để debug
         raise HTTPException(status_code=500, detail=str(e))

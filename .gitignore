@@ -52,14 +52,13 @@ yarn-error.log*
 Thumbs.db
 
 # --- Project Specific ---
-# Ignore all markdown files except README.md
-*.md
 !README.md
-# Note: GEMINI.md contains project rules. If you want Git to track it, uncomment the line below:
-# !GEMINI.md
+!README_VN.md
+!GEMINI.md
+*.md
 
 # --- Data & VDB ---
-*.db
-*.sqlite3
 data/
 qdrant_storage/
+*.db
+*.sqlite3
