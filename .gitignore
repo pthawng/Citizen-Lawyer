@@ -52,8 +52,9 @@ yarn-error.log*
 Thumbs.db
 
 # --- Project Specific ---
-!GEMINI.md
 *.md
+!README.md
+!README_VN.md
 
 # --- Data & VDB ---
 data/
